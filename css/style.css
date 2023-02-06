@@ -34,8 +34,379 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
-/* Обнуление */
+/* reset */
+
+@font-face {
+	font-display: swap; 
+	font-family: 'El Messiri';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/el-messiri-v18-latin_cyrillic-regular.eot');
+	src: url('../fonts/el-messiri-v18-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-regular.woff2') format('woff2'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-regular.woff') format('woff'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-regular.ttf') format('truetype'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-regular.svg#ElMessiri') format('svg');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'El Messiri';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/el-messiri-v18-latin_cyrillic-700.eot');
+	src: url('../fonts/el-messiri-v18-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-700.woff2') format('woff2'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-700.woff') format('woff'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-700.ttf') format('truetype'),
+		url('../fonts/el-messiri-v18-latin_cyrillic-700.svg#ElMessiri') format('svg');
+}
+
+
+@font-face {
+	font-display: swap;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-300.eot');
+	src: url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-300.woff2') format('woff2'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-300.woff') format('woff'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-300.ttf') format('truetype'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-300.svg#Montserrat') format('svg');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-regular.eot');
+	src: url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-regular.svg#Montserrat') format('svg');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-700.eot');
+	src: url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-700.woff2') format('woff2'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-700.woff') format('woff'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-700.ttf') format('truetype'),
+		url('../fonts/montserrat-v25-latin_cyrillic-ext_cyrillic-700.svg#Montserrat') format('svg');
+}
 
 body{
 	background: #162831;
+	margin: 0px auto;
+	font-family: "Montserrat";
 }
+
+.main-header{
+	max-width: 1298px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px auto;
+	padding: 31px 0 0 0;
+}
+
+.nav-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.nav-header nav a{
+	color: #FFFFFF;
+}
+
+.header-button{
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: 600;
+	background: #018ABE;
+	width: 200px;
+	height: 45px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main{
+	padding: 49px 0 0 0;
+}
+
+.first-screen{
+	max-width: 1296px;
+	background: url(../img/first-screen.svg);
+	height: 600px;
+	margin: 0px auto;
+}
+
+.header-text{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 136px 0 0 0;
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.header-text::before{
+	content: '';
+	width: 28px;
+	height: 14px;
+	background: #FFFFFF;
+	border-radius: 0px 50px;
+	margin: 0px 66px 0 0;
+}
+
+.header-text::after{
+	content: '';
+	width: 28px;
+	height: 14px;
+	background: #FFFFFF;
+	border-radius: 0px 50px;
+	margin: 0 0 0 66px;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.header-title{
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 64px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 140%;
+	padding: 40px 0 0 0;
+}
+
+.session{
+	width: 1296px;
+	height: 699px;
+	padding: 150px 0 0 0;
+	margin: 0px auto;
+}
+
+.session-title{
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 42px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.session-title::before{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	background: #018ABE;
+	border-radius: 0px 50px;
+	margin: 0 45px 0 0;
+}
+
+.session-title::after{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	background: #018ABE;
+	border-radius: 0px 50px;
+	margin: 0 0 0 45px;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.session-container{
+	padding: 100px 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(3, 416px);
+	grid-template-rows: 258px 258px;
+	gap: 24px 24px;
+}
+
+.session-img{
+	position: relative;
+}
+
+.session-img-1{
+	grid-column: 1/2;
+	grid-row: 1/3;
+	position: relative;
+}
+
+.session-text-1{
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 140%;
+	color: #FFFFFF;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+
+.session-text{
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 140%;
+	color: #FFFFFF;
+	position: absolute;
+	left: 40px;
+	bottom: 30px;
+}
+
+.review{
+	padding: 279px 0 0 0;
+	max-width: 1736px;
+	margin: 0px auto;
+}
+
+.review-title{
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 42px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.review-title::before{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	background: #018ABE;
+	border-radius: 0px 50px;
+	margin: 0 45px 0 0;
+}
+
+.review-title::after{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	background: #018ABE;
+	border-radius: 0px 50px;
+	margin: 0 0 0 45px;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.review-container{
+	padding: 100px 0 0 0;
+	display: grid;
+	grid-template-columns: repeat (3, 416px);
+	grid-template-rows: 258px 258px;
+}
+
+.kira{
+	width: 636px;
+	height: 350px;
+	background: #018ABE;
+	border-radius: 10px;
+	color: #FFFFFF;
+	grid-row: 1/3;
+	grid-column: 2/3;
+}
+
+.kira p{
+	padding: 50px 0 0 60px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.kira span{
+	display: inline-block;
+	padding: 20px 60px 56px 60px;
+	line-height: 140%;
+	font-weight: 300;
+}
+
+.aleks{
+	background: #018ABE;
+	border-radius: 10px;
+	width: 500px;
+	height: 276px;
+	grid-row: 1/3;
+	grid-column: 1/3;
+	margin: 37px 0 0 25px;
+	opacity: 0.4;
+}
+
+.aleks p{
+	padding: 50px 0 0 60px;
+	font-weight: 700;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.aleks span{
+	display: inline-block;
+	padding: 20px 60px 56px 60px;
+	line-height: 140%;
+	font-weight: 300;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+.dots{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.dots span{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #FFFFFF;
+	border-radius: 3px;
+}
+
+
+.about{
+	max-width: 1076px;
+	padding: 150px 0 0 0;
+	margin: 0px auto;
+}
+
+.about-title{
+	text-align: center;
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 42px;
+	color: #FFFFFF;
+}
+
+.about-title::before{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	background: #018ABE;
+	border-radius: 0px 50px;
+	margin: 0 45px 0 0;
+}
+
+.about-title::after{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	background: #018ABE;
+	border-radius: 0px 50px;
+	margin: 0 0 0 45px;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
